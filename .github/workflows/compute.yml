@@ -37,7 +37,7 @@ jobs:
               event_type: "return_data_to_ubiquibot_kernel",
               client_payload: {
                 state_id: "${{ inputs.stateId }}",
-                output: `{ test_output: "output-plugin-A" }`,
+                output: `{ "test_output": "output-plugin-A" }`,
               },
              });
 
