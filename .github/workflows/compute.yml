@@ -34,7 +34,7 @@ jobs:
              await github.rest.repos.createDispatchEvent({
               owner: "${{ github.repository }}".split("/")[0],
               repo: "${{ github.repository }}".split("/")[1],
-              event_type: "return_data_to_kernel",
+              event_type: "return_data_to_ubiquibot_kernel",
               client_payload: {
                 state_id: "${{ inputs.stateId }}",
                 output: `{ test_output: "output-plugin-A" }`,
